@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>test</title>
+</head>
+<body>
+	<header>
+		<a href="index.html">My profile</a>
+		<a href="labs.html">Laboratory</a>
+		<a href="pract.html">Practical</a>
+	</header>
+	<main>
+		<section class="practt">
+			 <table border="1">
+		        <tr>
+		            <th>Понеділок</th>
+		            <th>Вівторок</th>
+		            <th>Середа</th>
+		            <th>Четвер</th>
+		            <th>П'ятниця</th>
+		        </tr>
+		        <tr>
+		            <td>ООП C#</td>
+		            <td>ООП C#</td>
+		            <td>Web</td>
+		            <td>Дослідження операцій</td>
+		            <td>Вища математика</td>
+		        </tr>
+		        <tr>
+		            <td>Web</td>
+		            <td>Іноземна мова</td>
+		            <td>Філософія</td>
+		            <td>Українська мова</td>
+		            <td>ПППІ</td>
+		        </tr>
+		        <tr>
+		            <td>Українська мова</td>
+		            <td>Іноземна мова</td>
+		            <td></td>
+		            <td></td>
+		            <td></td>
+		        </tr>
+		        <tr>
+		            <td>Філософія</td>
+		            <td>Вища математика</td>
+		            <td></td>
+		            <td></td>
+		            <td></td>
+		        </tr>
+		        <tr>
+		            <td>Вища математика</td>
+		            <td></td>
+		            <td></td>
+		            <td></td>
+		            <td></td>
+		        </tr>
+		    </table>
+		</section>
+	</main>
+	<div>
+		
+	</div>
+</body>
+</html>
