@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>test</title>
+</head>
+<body>
+	<header>
+		<a href="index.html">My profile</a>
+		<a href="labs.html">Laboratory</a>
+		<a href="pract.html">Practical</a>
+	</header>
+	<main>
+		<section class="profile">
+			<div id="reg-first-lab">
+				<h1>Registration</h1>
+			</div>
+			<form action="https://webhook.site/e8da5ad4-8d74-444b-93cc-0a1b126c9289" method="post">
+				<div class="form-group">
+					<label for="name">First name</label>
+					<input type="text" name="name" id="name" required>
+				</div>
+				<div class="form-group">
+					<label for="surname">Last name</label>
+					<input type="text" name="surname" id="surname" required>
+				</div>
+				<div class="form-group">
+					<label for="email">Your email</label>
+					<input type="email" name="email" id="email" required>
+				</div>
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input type="password" name="password" id="password" required>
+				</div>
+				<div class="form-group">
+					<label for="confirm-password">Confirm your password</label>
+					<input type="password" name="confirm-password" id="confirm-password" required>
+				</div>
+				<div class="form-group">
+					<label for="date-of-birth">Your date of birth</label>
+					<input type="date" name="date-of-birth" id="date-of-birth" required>
+				</div>
+				<div class="form-group">
+					<label for="gender">Gender</label>
+					<select name="gender" id="gender">
+						<option value="male">male</option>
+						<option value="female">female</option>
+					</select>
+					
+				</div>
+				<button type="submit">Confirm registration</button>
+			</form>
+		</section>
+	</main>
+	<div>
+		
+	</div>
+</body>
+</html>
+		
+	</div>
+</body>
+</html>
