@@ -37,6 +37,13 @@ header a {
     border-bottom-width: 10% ;
 }
 
+.practt {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
 nav {
     background-color: #444;
     color: #fff;
@@ -108,11 +115,25 @@ main {
     background-color: #222;
 }
 
-.practt {
-    background-color: #fff;
-    padding: 20px;
+.profile-reg select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cc;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.profile-reg button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.profile-reg button:hover {
+    background-color: #222;
 }
 
 form {
@@ -120,6 +141,7 @@ form {
 }
 
 #reg-first-lab h1 {
+    margin: 1px;
     padding: 12px 12px 0px 0px;
     font-size: 22px;
     text-transform: uppercase;
@@ -142,6 +164,19 @@ form {
     border-radius: 5px;
 }
 
+.profile-reg label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.profile-reg input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 .form-group {
     margin-bottom: 15px;
 }
@@ -156,4 +191,4 @@ footer {
 a {
      text-decoration: none;
      color: #000;
-} 
+}
