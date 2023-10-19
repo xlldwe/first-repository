@@ -1,9 +1,13 @@
 body {
+    display: flex;
+    flex-direction: column;
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     margin: 0;
+    width: 100%;
     height: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
+/*    overflow: hidden;*/
 }
 
 html {
@@ -12,16 +16,24 @@ html {
 
 header {
     display: flex;
-    background-color: #333;
+/*    flex: 1;*/
+    background-color: #212121;
     color: #fff;
-    text-align: center;
+    align-items: center;
     justify-content: flex-end;
+    width: 100%;
+    height: 56px;
 }
 
 header a {
     color: #fff;
     padding: 20px;
     margin: 0;
+}
+
+header nav {
+    background-color: none;
+    padding: 20px;
 }
 
 
@@ -119,8 +131,8 @@ header a {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-nav {
-    background-color: #444;
+#sec-lab nav {
+    background-color: none;
     color: #fff;
     padding: 10px;
 }
@@ -130,8 +142,9 @@ main {
     justify-content: center;
     align-items: center;
     max-width: 100%;
+    mxa-height: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px 20px 20px 20px;
 }
 
 .profile {
@@ -256,14 +269,132 @@ form {
     margin-bottom: 15px;
 }
 
+/*third-lab*/
+
+.yt-header {
+    width: 100%;
+    height: 100%;
+    background-color: #212121;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.yt-header nav {
+    background-color: #212121;
+    padding: 0;
+}
+
+.yt-header h1 {
+    margin: 10px;
+}
+
+.yt-header input {
+    border: 1px solid #515151;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: #212121;
+    
+    color: #515151;
+}
+
+.yt-header button {
+    position: relative;
+    right: 38px;
+    top: 4px;
+    border: none;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    background: #515151;
+    color: #515151;
+}
+
+
+.yt-header button img {
+    background: none;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.videos {
+    display: grid;
+    justify-content: space-around;
+    padding: 0px 15px 0px 0px;
+}
+
+.videos h1 {
+    margin: 0;
+}
+
+.videos ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 300px;
+    list-style: none;
+    margin-bottom: 50px;
+    padding: 0;
+}
+
+.videos ul li {
+    display: block;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 60px;
+}
+
+.videos h3 {
+    padding: 5px;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+.videos ul li iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: opacity 1s ease;
+    animation: fadeIn 2s ease;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 80px;
+    }
+
+    .yt-header nav {
+        flex-direction: column;
+    }
+
+    .videos {
+        flex-direction: column;
+    }
+
+    .videos ul {
+        width: 100%;
+    }
+
+    .videos ul li {
+        width: 100%;
+        margin: 0 0 20px 0;
+        padding: 10px;
+    }
+}
+
 footer {
+    width: 100%;
+    height: 60px;
+    background-color: #212121;
+    color: #fff;
     text-align: center;
+    padding: 10px;
+    transition: margin 0.3s;
     position: fixed;
     bottom: 0;
-    width: 100%;
-    background-color: #333;
-    color: #fff;
-    clear: both;
+}
+
+body:hover footer {
+    margin-bottom: -80px;
 }
 
 
