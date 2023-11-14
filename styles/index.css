@@ -327,19 +327,18 @@ form {
     margin: 0;
 }
 
+/* Add these styles to your existing CSS */
+
 .videos ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 300px;
-    list-style: none;
-    margin-bottom: 50px;
-    padding: 0;
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr; /* Initially, one column for each video */
+  gap: 20px; /* Add gap between videos */
 }
 
-.videos ul li {
-    display: block;
-    padding: 10px 20px 10px 20px;
-    margin-bottom: 60px;
+.videos li {
+  box-sizing: border-box;
 }
 
 .videos h3 {
@@ -356,28 +355,16 @@ form {
     animation: fadeIn 2s ease;
 }
 
-@media (max-width: 768px) {
-    header {
-        height: 80px;
-    }
+@media screen and (min-width: 600px) {
+  .videos ul {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for each video */
+  }
+}
 
-    .yt-header nav {
-        flex-direction: column;
-    }
-
-    .videos {
-        flex-direction: column;
-    }
-
-    .videos ul {
-        width: 100%;
-    }
-
-    .videos ul li {
-        width: 100%;
-        margin: 0 0 20px 0;
-        padding: 10px;
-    }
+@media screen and (min-width: 900px) {
+  .videos ul {
+    grid-template-columns: repeat(3, 1fr); /* Three columns for each video */
+  }
 }
 
 footer {
