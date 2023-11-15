@@ -327,18 +327,8 @@ form {
     margin: 0;
 }
 
-/* Add these styles to your existing CSS */
-
-.videos ul {
-  list-style: none;
-  padding: 0;
-  display: grid;
-  grid-template-columns: 1fr; /* Initially, one column for each video */
-  gap: 20px; /* Add gap between videos */
-}
-
-.videos li {
-  box-sizing: border-box;
+#filt {
+    margin-top: 50px;
 }
 
 .videos h3 {
@@ -353,6 +343,18 @@ form {
     border-radius: 10px;
     transition: opacity 1s ease;
     animation: fadeIn 2s ease;
+}
+
+.videos ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+}
+
+.videos li {
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: 600px) {
