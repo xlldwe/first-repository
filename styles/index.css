@@ -380,6 +380,9 @@
     border-bottom: 1px solid #000;
 }
 
+.lab-4-header {
+    justify-content: space-between;
+}
 
 /*lab-five*/
 
