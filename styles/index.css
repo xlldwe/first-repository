@@ -1,40 +1,124 @@
-body {
+.profile {
     display: flex;
-    flex-direction: column;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-/*    overflow: hidden;*/
+    max-width: 100%;
+    width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 20px #ccc;
+    -webkit-box-shadow: 0px 0px 20px #ccc;
+    opacity: 0.9;
+    font-family: 'Montserrat', sans-serif;
 }
 
-html {
-    height: 100%;
+.profile img {
+    max-width: 150px;
+    border-radius: 50%;
 }
 
-header {
+/*first-lab*/
+
+.profile-reg {
     display: flex;
-/*    flex: 1;*/
-    background-color: #212121;
-    color: #fff;
-    align-items: center;
-    justify-content: flex-end;
+    max-width: 100%;
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 20px #ccc;
+    -webkit-box-shadow: 0px 0px 20px #ccc;
+    opacity: 0.9;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.profile select {
     width: 100%;
-    height: 56px;
+    padding: 10px;
+    border: 1px solid #cc;
+    border-radius: 5px;
 }
 
-header a {
+.profile button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #333;
     color: #fff;
-    padding: 20px;
-    margin: 0;
+    cursor: pointer;
 }
 
-header nav {
-    background-color: none;
-    padding: 20px;
+.profile button:hover {
+    background-color: #222;
 }
+
+.profile-reg select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cc;
+    border-radius: 5px;
+}
+
+.profile-reg button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.profile-reg button:hover {
+    background-color: #222;
+}
+
+#reg-first-lab h1 {
+    margin: 1px;
+    padding: 12px 12px 0px 0px;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    letter-spacing: 2px;
+    display: inline-block;
+    font-weight: 100;
+}
+
+.profile label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.profile input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.profile-reg label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.profile-reg input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+/*second-lab*/
 
 .container input {
     background-color: #ffff;
@@ -134,138 +218,6 @@ header nav {
     background-color: none;
     color: #fff;
     padding: 10px;
-}
-
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    mxa-height: 100%;
-    margin: 0 auto;
-    padding: 10px 20px 20px 20px;
-}
-
-.profile {
-    display: flex;
-    max-width: 100%;
-    width: 600px;
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0px 0px 20px #ccc;
-    -webkit-box-shadow: 0px 0px 20px #ccc;
-    opacity: 0.9;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.profile-reg {
-    display: flex;
-    max-width: 100%;
-    width: 400px;
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0px 0px 20px #ccc;
-    -webkit-box-shadow: 0px 0px 20px #ccc;
-    opacity: 0.9;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.profile img {
-    max-width: 150px;
-    border-radius: 50%;
-}
-
-.profile select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #cc;
-    border-radius: 5px;
-}
-
-.profile button {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #333;
-    border-radius: 5px;
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
-}
-
-.profile button:hover {
-    background-color: #222;
-}
-
-.profile-reg select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #cc;
-    border-radius: 5px;
-}
-
-.profile-reg button {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #333;
-    border-radius: 5px;
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
-}
-
-.profile-reg button:hover {
-    background-color: #222;
-}
-
-form {
-    margin-bottom: 20px;
-}
-
-#reg-first-lab h1 {
-    margin: 1px;
-    padding: 12px 12px 0px 0px;
-    font-size: 22px;
-    text-transform: uppercase;
-    padding-bottom: 5px;
-    letter-spacing: 2px;
-    display: inline-block;
-    font-weight: 100;
-}
-
-.profile label {
-    display: block;
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-
-.profile input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.profile-reg label {
-    display: block;
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-
-.profile-reg input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.form-group {
-    margin-bottom: 15px;
 }
 
 /*third-lab*/
@@ -369,6 +321,127 @@ form {
   }
 }
 
+/*fourth-lab*/
+
+.wp-main-cont {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #000;
+}
+
+.side-bar {
+    height: 100%;
+    border: 1px solid #000;
+    padding: 0px 20px 0px 0px;
+}
+
+.side-bar li {
+    border-bottom: 1px solid #000;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+}
+
+.days .day {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid #000;
+    height: 100%;
+    padding: 0 80px;
+}
+
+.days .day p {
+    margin: 10px 0;
+    border-bottom: 1px solid #000;
+}
+
+.days .holidays {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+}
+
+.holidays .holiday {
+    display: flex;
+    border: 1px solid #000;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.holidays .holiday p {
+    margin: 10px 0;
+    border-bottom: 1px solid #000;
+}
+
+
+/*lab-five*/
+
+/*general-appearance*/
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+/*    overflow: hidden;*/
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    mxa-height: 100%;
+    margin: 0 auto;
+    padding: 10px 20px 20px 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+header {
+    display: flex;
+    background-color: #212121;
+    color: #fff;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 56px;
+}
+
+header a {
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+}
+
+header nav {
+    background-color: none;
+    padding: 20px;
+    text-align: right;
+}
+
+header h1 {
+    margin: 0;
+    padding: 5px;
+}
+
 footer {
     width: 100%;
     height: 50px;
@@ -384,7 +457,6 @@ footer {
 body:hover footer {
     margin-bottom: -80px;
 }
-
 
 a {
      text-decoration: none;
