@@ -1072,10 +1072,11 @@ footer {
     transition: margin 0.3s;
     position: fixed;
     bottom: 0;
+    margin-bottom: -80px;
 }
 
 body:hover footer {
-    margin-bottom: -80px;
+    margin-bottom: 0;
 }
 
 a {
